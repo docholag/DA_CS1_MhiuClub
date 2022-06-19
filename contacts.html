@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts | Mhiu Club</title>
+    <meta name="description" content="Contacts page with Google Map skin dark, contact form and contact informations list.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/js/bootstrap/css/bootstrap.css">
+    <script src="public/js/script.js"></script>
+    <link rel="stylesheet" href="public/css/components.css">
+    <link rel="stylesheet" href="public/css/image-box.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="public/img/favicon.png">
+    <!-- Extra optional content header -->
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="background-page" style="background-image:url('public/img/hd-2.jpg')"></div>
+    <header class="fixed-top scroll-change" data-menu-anima="fade-left">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-main navbar-middle">
+                <div class="container">
+                    <div class="scroll-hide">
+                        <div class="container">
+                            <a class="navbar-brand center" href="#">
+                                <img src="public/img/logo4.jpg" alt="logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><img src="public/img/logo4.jpg" alt="logo" /></a>
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa fa-bars"></i> 
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav no-margins">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li class="dropdown">
+                                <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Sự kiện <i class="caret"></i></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="events.html">Tất cả sự kiện</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="gallery.html">Bộ sưu tập</a></li>
+                            <li><a href="http://localhost:3000/">Gian hàng</a></li>
+                            <li><a href="contacts.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="overlay-content">
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Địa chỉ</h2>
+                        <hr class="h" />
+                        <h4>28 Huỳnh Văn Nghệ</h4>
+                        <hr class="space s" />
+                        <ul class="list-texts">
+                            <li><b>Điện thoại:</b>  0346269116</li>
+                            <li><b>Email:</b>  dont.21it@vku.udn.vn</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8">
+                        <form action="http://www.framework-y.com/public/js/php/contact-form.php" class="form-box form-ajax" method="post">
+                            <h3>Để lại lời nhắn cho chúng tôi</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Tên</p>
+                                    <input id="name" name="name" placeholder="" type="text" class="form-control form-value" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Email</p>
+                                    <input id="email" name="email" placeholder="" type="email" class="form-control form-value" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <hr class="space xs" />
+                                    <p>Số điện thoại</p>
+                                    <input id="phone" name="phone" placeholder="" type="text" class="form-control form-value">
+                                    <hr class="space xs" />
+                                    <p>Nội dung</p>
+                                    <textarea id="messagge" name="messagge" class="form-control form-value" required></textarea>
+                                    <hr class="space s" />
+                                    <button class="anima-button circle-button btn-sm btn" type="submit"><i class="fa fa-envelope-o"></i>Gửi tin nhắn</button>
+                                </div>
+                            </div>
+                            <!-- <div class="success-box">
+                                <div class="alert alert-success">Tin nhắn của bạn đã được gửi</div>
+                            </div>
+                            <div class="error-box">
+                                <div class="alert alert-warning">Có lỗi, vui lòng điền đầy đủ thông tin</div>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-map" style="height:500px;">
+            <div class="google-map" data-address="New York, US" data-skin="black" data-zoom="15"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <hr class="space xs" />
+                    <div class="copy-row">
+                        <div class="tag-row">
+                            <span>Copyright © 2022</span>
+                            <span>28 Huỳnh Văn Nghệ</span>
+                            <span>0346 269 116</span>
+                            <span>dont.21it@vku.udn.vn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right">
+                    <div class="btn-group social-group">
+                        <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="public/js/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="public/css/animations.css">
+        <script src="public/js/smooth.scroll.min.js"></script>
+    </footer>
+</body>
+</html>
